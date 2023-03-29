@@ -1,0 +1,66 @@
+.container{
+    color: white;
+    display: grid;
+    height: 100vh;
+    grid-gap: 2px;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "header header header header header header"
+    ". main-content main-content main-content sidebar ."
+    ". twin twin twin2 twin2 ."
+    "footer footer footer footer footer footer"; 
+}
+
+.header{
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(81, 200, 255);
+    grid-area: header;
+    font-size: 15pt;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(88, 184, 88);
+    grid-area: main-content;
+    font-size: 15pt;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 120, 216);
+    grid-area: sidebar;
+    font-size: 15pt;
+}
+
+.twin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 152, 0);
+    grid-area: twin;
+    font-size: 15pt;
+}
+
+.twin2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 152, 0);
+    grid-area: twin2;
+    font-size: 15pt;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(46, 46, 128);
+    grid-area: footer;
+    font-size: 15pt;
+}
