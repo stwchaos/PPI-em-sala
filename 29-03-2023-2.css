@@ -3,7 +3,8 @@
     display: grid;
     height: 100vh;
     grid-gap: 2px;
-    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    background-image: url(assets/fire.png);
+    grid-template-rows: 1fr 1fr 1fr 0.3fr;
     grid-template-areas: 
     "header header header header header header"
     ". main-content main-content main-content sidebar ."
@@ -14,15 +15,19 @@
 .header{
     display: flex;
     align-items: center;
-
+    background-image: url(assets/elomo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-color: rgb(81, 200, 255);
     grid-area: header;
     font-size: 15pt;
+    cursor: cell;
 }
 
 .main-content{
     display: flex;
     align-items: center;
+    background-image: url(.png);
     justify-content: center;
     background-color: rgb(88, 184, 88);
     grid-area: main-content;
@@ -42,6 +47,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: rgb(253, 152, 0);
     grid-area: twin;
     font-size: 15pt;
@@ -51,6 +59,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: rgb(253, 152, 0);
     grid-area: twin2;
     font-size: 15pt;
@@ -63,4 +74,11 @@
     background-color: rgb(46, 46, 128);
     grid-area: footer;
     font-size: 15pt;
+}
+.container>*{
+    transition: 1s;
+}
+.container>*:hover{
+    transform: rotate(30deg);
+    box-shadow: 0px 0px 5px 10px gray;
 }
